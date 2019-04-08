@@ -50,7 +50,7 @@ SWEP.FireModes = {"Automatic", "3Burst", "Single"}
 --Ammo Related
 SWEP.Primary.ClipSize = 30 -- This is the size of a clip
 SWEP.Primary.DefaultClip = 30 -- This is the number of bullets the gun gives you, counting a clip as defined directly above.
-SWEP.Primary.Ammo = "9x19mm Parabellum" -- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
+SWEP.Primary.Ammo = "pistol" -- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 SWEP.Primary.AmmoConsumption = 1 --Ammo consumed per shot
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 SWEP.DisableChambering = false --Disable round-in-the-chamber
