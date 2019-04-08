@@ -1,6 +1,6 @@
 local path = "weapons/tfa_ins2/spas12/"
 
-TFA.AddFireSound("TFA_INS2_SPAS12.1", path .. "fire.wav", true, ")" )
+TFA.AddFireSound("TFA_INS2_SPAS12.1", path .. "spas_fire.wav", true, ")" )
 TFA.AddFireSound("TFA_INS2_SPAS12.2", path .. "m590_suppressed_fp.wav", true, ")" )
 TFA.AddWeaponSound("TFA_INS2_SPAS12.Draw", { path .. "uni_weapon_draw_01.wav", path .. "uni_weapon_draw_02.wav", path .. "uni_weapon_draw_03.wav" } ) --, path .. "bash1.wav"})
 TFA.AddWeaponSound("TFA_INS2_SPAS12.Holster", path .. "uni_weapon_holster.wav")
