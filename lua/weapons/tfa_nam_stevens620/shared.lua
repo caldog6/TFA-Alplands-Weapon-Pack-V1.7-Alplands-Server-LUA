@@ -41,7 +41,7 @@ SWEP.Primary.KickHorizontal		= 0.01		-- Maximum up recoil (stock)
 SWEP.Primary.StaticRecoilFactor = 1.2
 
 SWEP.Primary.Automatic			= false		-- Automatic = true; Semi Auto = false
-SWEP.Primary.Ammo			= "12 Gauge"			-- pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, AirboatGun
+SWEP.Primary.Ammo			= "buckshot"			-- pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, AirboatGun
 -- Pistol, buckshot, and slam always ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 
 SWEP.Secondary.IronFOV			= 70		-- How much you 'zoom' in. Less is more! 	
