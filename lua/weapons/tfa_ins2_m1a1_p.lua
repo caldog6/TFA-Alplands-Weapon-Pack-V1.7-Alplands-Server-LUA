@@ -258,13 +258,13 @@ SWEP.WorldModelBoneMods = {
 
 SWEP.VElements = {
 	["rail_sights"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/a_iron_m1a1_l.mdl", bone = "A_Optic", rel = "", pos = Vector(2, 2, 2), angle = Angle(0, 0, 0), size = Vector(0.611, 0.611, 0.611), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = true},
-	["mag"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/a_magazine_m1a1_15.mdl", bone = "Magazine", rel = "", pos = Vector(0.4, 0, 0.8), angle = Angle(0, 0, 0), size = Vector(0.8, 0.8, 0.8), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, active = true, bonemerge = true },
+	["mag"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/a_alp_magazine_m1a1_15.mdl", bone = "Magazine", rel = "", pos = Vector(0.4, 0, 0.8), angle = Angle(0, 0, 0), size = Vector(0.8, 0.8, 0.8), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, active = true, bonemerge = true },
 }
 
 SWEP.WElements = {
 	["ref"] = { type = "Model", model = SWEP.WorldModel, bone = "oof", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
 	["rail_sights"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/w_iron_m1a1_l.mdl", bone = "A_Optic", rel = "ref", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = true},
-	["mag"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/w_magazine_m1a1_15.mdl", bone = "Magazine", rel = "", pos = Vector(0.4, 0, 0.8), angle = Angle(0, 0, 0), size = Vector(0.8, 0.8, 0.8), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, active = true, bonemerge = true },
+	["mag"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/w_alp_magazine_m1a1_15.mdl", bone = "Magazine", rel = "", pos = Vector(0.4, 0, 0.8), angle = Angle(0, 0, 0), size = Vector(0.8, 0.8, 0.8), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, active = true, bonemerge = true },
 }
 
 SWEP.Attachments = {
