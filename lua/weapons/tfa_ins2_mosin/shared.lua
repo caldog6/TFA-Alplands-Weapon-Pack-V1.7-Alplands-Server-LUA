@@ -75,7 +75,7 @@ SWEP.Primary.RangeFalloff = 0.5 -- The percentage of the range the bullet damage
 --Penetration Related
 SWEP.MaxPenetrationCounter = 4 --The maximum number of ricochets.  To prevent stack overflows.
 --Misc
-SWEP.IronRecoilMultiplier = 0.5 --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
+SWEP.IronRecoilMultiplier = 0.8 --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
 SWEP.CrouchAccuracyMultiplier = 0.5 --Less is more.  Accuracy * 0.5 = Twice as accurate, Accuracy * 0.1 = Ten times as accurate
 --Movespeed
 SWEP.MoveSpeed = 0.85 --Multiply the player's movespeed by this.

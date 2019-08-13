@@ -20,7 +20,7 @@ SWEP.Type = "Anti Material Sniper Rifle"
 --[[WEAPON HANDLING]]--
 SWEP.Primary.Sound = Sound("TFA_INS2_CSNIPER.1") -- This is the sound of the weapon, when you shoot.
 SWEP.Primary.PenetrationMultiplier = 4 --Change the amount of something this gun can penetrate through
-SWEP.Primary.Damage = 105 -- Damage, in standard damage points.
+SWEP.Primary.Damage = 135 -- Damage, in standard damage points.
 SWEP.Primary.DamageTypeHandled = true --true will handle damagetype in base
 SWEP.Primary.DamageType = nil --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.  Leave nil to autodetect.  DMG_AIRBOAT opens doors.
 SWEP.Primary.Force = nil --Force value, leave nil to autocalc
@@ -54,9 +54,9 @@ SWEP.Primary.AmmoConsumption = 1 --Ammo consumed per shot
 SWEP.DisableChambering = false --Disable round-in-the-chamber
 --Recoil Related
 SWEP.Primary.KickUp = 1.0 -- This is the maximum upwards recoil (rise)
-SWEP.Primary.KickDown = 0.8 -- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal = 0.42 -- This is the maximum sideways recoil (no real term)
-SWEP.Primary.StaticRecoilFactor = 1.55 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
+SWEP.Primary.KickDown = 0.7 -- This is the maximum downwards recoil (skeet)
+SWEP.Primary.KickHorizontal = 0.4 -- This is the maximum sideways recoil (no real term)
+SWEP.Primary.StaticRecoilFactor = 1.45 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 --Firing Cone Related
 SWEP.Primary.Spread = .06 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
 SWEP.Primary.IronAccuracy = .0005 -- Ironsight accuracy, should be the same for shotguns
@@ -70,7 +70,7 @@ SWEP.Primary.RangeFalloff = 0.5 -- The percentage of the range the bullet damage
 --Penetration Related
 SWEP.MaxPenetrationCounter = 4 --The maximum number of ricochets.  To prevent stack overflows.
 --Misc
-SWEP.IronRecoilMultiplier = 0.4 --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
+SWEP.IronRecoilMultiplier = 0.8 --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
 SWEP.CrouchAccuracyMultiplier = 0.5 --Less is more.  Accuracy * 0.5 = Twice as accurate, Accuracy * 0.1 = Ten times as accurate
 --Movespeed
 SWEP.MoveSpeed = 0.855 --Multiply the player's movespeed by this.

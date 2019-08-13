@@ -82,18 +82,18 @@ SWEP.ProjectileEntity = nil --Entity to shoot
 SWEP.ProjectileVelocity = 0 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 --[[VIEWMODEL]]--
-SWEP.ViewModel			= "models/weapons/tfa_ins2/c_alp_mp5k.mdl" --Viewmodel path
-SWEP.ViewModelFOV			= 56		-- This controls how big the viewmodel looks.  Less is more.
+SWEP.ViewModel			= "models/weapons/tfa_ins2/c_mp5k.mdl" --Viewmodel path
+SWEP.ViewModelFOV			= 64		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands = true --Use gmod c_arms system.
---SWEP.VMPos = Vector(0,2,0) --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
+SWEP.VMPos = Vector(0,0,0) --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
 SWEP.VMAng = Vector(0,0,0) --The viewmodel angular offset, constantly.   Subtract this from any other modifications to viewmodel angle.
 SWEP.VMPos_Additive = true --Set to false for an easier time using VMPos. If true, VMPos will act as a constant delta ON TOP OF ironsights, run, whateverelse
 SWEP.CenteredPos = nil --The viewmodel positional offset, used for centering.  Leave nil to autodetect using ironsights.
 SWEP.CenteredAng = nil --The viewmodel angular offset, used for centering.  Leave nil to autodetect using ironsights.
 SWEP.Bodygroups_V = nil
 --[[WORLDMODEL]]--
-SWEP.WorldModel			= "models/weapons/tfa_ins2/w_alp_mp5k.mdl" -- Weapon world model path
+SWEP.WorldModel			= "models/weapons/tfa_ins2/w_mp5k.mdl" -- Weapon world model path
 SWEP.Bodygroups_W = nil --{
 --[0] = 1,
 --[1] = 4,
@@ -152,11 +152,11 @@ SWEP.RunSightsAng = Vector(-10, 0, 0) --Change this, using SWEP Creation Kit pre
 --[[IRONSIGHTS]]--
 SWEP.data = {}
 SWEP.data.ironsights = 1 --Enable Ironsights
-SWEP.Secondary.IronFOV = 70 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
+SWEP.Secondary.IronFOV = 80 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
 --SWEP.IronSightsPos = Vector(-2.994, -2, 0.83)
 --SWEP.IronSightsAng = Vector(0, 0, 0)
-SWEP.IronSightsPos = Vector(-2.305, -2, 0.6)
-SWEP.IronSightsAng = Vector(0.3, 0, 0)
+SWEP.IronSightsPos = Vector(-2.994, -2, 0.83)
+SWEP.IronSightsAng = Vector(0, 0, 0)
 
 SWEP.IronSightsPos_Kobra = Vector(-3.03, -4, 0)
 SWEP.IronSightsAng_Kobra = Vector(0.015, -0.16, 0)

@@ -1,6 +1,6 @@
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA Alplands" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep..
-SWEP.Manufacturer = "Heckler & Koch" --Gun Manufactrer (e.g. Hoeckler and Koch )
+SWEP.Manufacturer = "Glock Ges.m.b.H." --Gun Manufactrer (e.g. Hoeckler and Koch )
 SWEP.Author				= "pyro" --Author Tooltip
 SWEP.Contact				= "" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
@@ -9,7 +9,7 @@ SWEP.Spawnable				= (TFA and TFA.INS2) and true or false -- INSTALL SHARED PARTS
 SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
 SWEP.DrawCrosshairIS = false --Draw the crosshair in ironsights?
-SWEP.PrintName				= "USP-Tactical"		-- Weapon name (Shown on HUD)
+SWEP.PrintName				= "Glock 17"		-- Weapon name (Shown on HUD)
 SWEP.Slot				= 1				-- Slot in the weapon selection menu.  Subtract 1, as this starts at 0.
 SWEP.SlotPos				= 73			-- Position in the slot
 SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
@@ -17,10 +17,10 @@ SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 
 --[[WEAPON HANDLING]]--
-SWEP.Primary.Sound = Sound("TFA_INS2.USPT.1") -- This is the sound of the weapon, when you shoot.
-SWEP.Primary.SilencedSound = Sound("TFA_INS2.USPT.2") -- This is the sound of the weapon, when silenced.
+SWEP.Primary.Sound = Sound("TFA_INS2.SandstormGlock.1") -- This is the sound of the weapon, when you shoot.
+SWEP.Primary.SilencedSound = Sound("TFA_INS2.SandstormGlock.2") -- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
-SWEP.Primary.Damage = 35 -- Damage, in standard damage points.
+SWEP.Primary.Damage = 30 -- Damage, in standard damage points.
 SWEP.Primary.DamageTypeHandled = true --true will handle damagetype in base
 SWEP.Primary.DamageType = nil --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.  Leave nil to autodetect.  DMG_AIRBOAT opens doors.
 SWEP.Primary.Force = nil --Force value, leave nil to autocalc
@@ -41,25 +41,25 @@ SWEP.Silenced = false --Silenced by default?
 SWEP.SelectiveFire = false --Allow selecting your firemode?
 SWEP.DisableBurstFire = false --Only auto/single?
 SWEP.OnlyBurstFire = false --No auto, only burst/single?
-SWEP.DefaultFireMode = "" --Default to auto or whatev
+SWEP.DefaultFireMode = "single" --Default to auto or whatev
 SWEP.FireModeName = nil --Change to a text value to override it
 --Ammo Related
-SWEP.Primary.ClipSize = 12 -- This is the size of a clip
-SWEP.Primary.DefaultClip = 12 -- This is the number of bullets the gun gives you, counting a clip as defined directly above.
+SWEP.Primary.ClipSize = 17 -- This is the size of a clip
+SWEP.Primary.DefaultClip = 68 -- This is the number of bullets the gun gives you, counting a clip as defined directly above.
 SWEP.Primary.Ammo = "pistol" -- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 SWEP.Primary.AmmoConsumption = 1 --Ammo consumed per shot
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 SWEP.DisableChambering = false --Disable round-in-the-chamber
 --Recoil Related
-SWEP.Primary.KickUp = 0.8 -- This is the maximum upwards recoil (rise)
-SWEP.Primary.KickDown = 0.6 -- This is the maximum downwards recoil (skeet)
+SWEP.Primary.KickUp = 0.4 -- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickDown = 0.3 -- This is the maximum downwards recoil (skeet)
 SWEP.Primary.KickHorizontal = 0.15 -- This is the maximum sideways recoil (no real term)
-SWEP.Primary.StaticRecoilFactor = 0.8 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
+SWEP.Primary.StaticRecoilFactor = 0.7 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 --Firing Cone Related
-SWEP.Primary.Spread = .01 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.Spread = .014 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
 SWEP.Primary.IronAccuracy = .008 -- Ironsight accuracy, should be the same for shotguns
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
-SWEP.Primary.SpreadMultiplierMax = 6 --How far the spread can expand when you shoot. Example val: 2.5
+SWEP.Primary.SpreadMultiplierMax = 5 --How far the spread can expand when you shoot. Example val: 2.5
 SWEP.Primary.SpreadIncrement = 1.35 --What percentage of the modifier is added on, per shot.  Example val: 1/3.5
 SWEP.Primary.SpreadRecovery = 8 --How much the spread recovers, per second. Example val: 3
 --Range Related
@@ -78,7 +78,7 @@ SWEP.ProjectileEntity = nil --Entity to shoot
 SWEP.ProjectileVelocity = 0 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 --[[VIEWMODEL]]--
-SWEP.ViewModel			= "models/weapons/tfa_ins2/v_pyro_usp45.mdl" --Viewmodel path
+SWEP.ViewModel			= "models/weapons/tfa_ins2/c_sandstorm_glock17.mdl" --Viewmodel path
 SWEP.ViewModelFOV			= 70		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands = true --Use gmod c_arms system.
@@ -89,7 +89,7 @@ SWEP.CenteredPos = nil --The viewmodel positional offset, used for centering.  L
 SWEP.CenteredAng = nil --The viewmodel angular offset, used for centering.  Leave nil to autodetect using ironsights.
 SWEP.Bodygroups_V = {}
 --[[WORLDMODEL]]--
-SWEP.WorldModel			= "models/weapons/tfa_ins2/w_pyro_usp45.mdl" -- Weapon world model path
+SWEP.WorldModel			= "models/weapons/tfa_ins2/w_sandstorm_glock17.mdl" -- Weapon world model path
 SWEP.Bodygroups_W = {}
 SWEP.HoldType = "pistol" -- This is how others view you carrying the weapon. Options include:
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive
@@ -140,7 +140,7 @@ SWEP.data.ironsights = 1 --Enable Ironsights
 SWEP.Secondary.IronFOV = 75 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
 --SWEP.IronsightPos = Vector(-1.543, 0.000, 0.240)
 --SWEP.IronsightAng = Vector(0.000, 0.000, 0.000)
-SWEP.IronSightsPos = Vector(-1.537, -1, 0.240)
+SWEP.IronSightsPos = Vector(-2.65, -1.5, 1.76)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 
 --[[INSPECTION]]--
@@ -238,7 +238,7 @@ SWEP.AnimCycle = 0 -- Start on the right
 --[[ATTACHMENTS]]--
 
 SWEP.Attachments = {
-	[1] = { atts = {"ins2_br_supp"}, sel = 1, order = 2 }
+
 }
 SWEP.AttachmentDependencies = {}
 SWEP.AttachmentExclusions = {}
